@@ -10,22 +10,25 @@ for (var i = 1; i < 1000; i++) {
 document.getElementById("megoldas1").innerHTML = sum;
 
 ///Feladat 2
+function primtenyezo(szam){
+    var oszto = 2;
 
-var oszto = 2;
-var szam = 600851475143; 
-
-while(szam > 1){
-    if(szam % oszto === 0){
-        szam /= oszto; 
+    while(szam > 1){
+        if(szam % oszto === 0){
+            szam /= oszto; 
+        }
+        else{
+            oszto ++;
+            
+        }
+        //console.log('oszto: ' + oszto);
+        //console.log('szam: ' + szam);
     }
-    else{
-        oszto ++;
-        
-    }
-    //console.log('oszto: ' + oszto);
-    //console.log('szam: ' + szam);
+    document.getElementById("megoldas2").innerHTML = oszto;
 }
-document.getElementById("megoldas2").innerHTML = oszto;
+
+primtenyezo(6143);
+
 
 ///Feladat 3
 
